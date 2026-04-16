@@ -1,0 +1,22 @@
+Source: php-mpdf-psr-log-aware-trait
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Homepage: https://github.com/mpdf/psr-log-aware-trait
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/Vitexus/php-mpdf-psr-log-aware-trait.git
+Vcs-Browser: https://github.com/Vitexus/php-mpdf-psr-log-aware-trait
+
+Package: php-mpdf-psr-log-aware-trait
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ php-common,
+ php-psr-log
+Description: Trait to allow support of different psr/log versions for mPDF
+ This library provides a trait allowing mPDF to support multiple versions
+ of psr/log (v1, v2, v3) without requiring a specific version.

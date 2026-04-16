@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_install:
+	mkdir -p debian/php-mpdf-psr-log-aware-trait/usr/share/php/Mpdf/PsrLogAwareTrait
+	cp -r src/* debian/php-mpdf-psr-log-aware-trait/usr/share/php/Mpdf/PsrLogAwareTrait/
+
+override_dh_auto_test:
